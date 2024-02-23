@@ -1,0 +1,18 @@
+---
+// Layout
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+// Data
+import { siteName, index } from "@data/siteData.json";
+---
+
+<BaseLayout
+  pageTitle={siteName + " | " + index.pageTitle}
+  metaTitle={index.metaTitle}
+  metaDescription={index.metaDescription}
+>
+  <main
+    class="grid grid-cols-1 sm:grid-cols-1 grid-auto-cols place-items-center m-4 gap-4"
+  >
+  </main>
+</BaseLayout>

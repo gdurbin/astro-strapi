@@ -1,0 +1,53 @@
+---
+// Components
+import SocialLink from "@components/SocialLink.astro";
+import { Icon } from "astro-icon/components";
+
+// Data
+import { socialData, siteMaker } from "@data/siteData.json";
+---
+
+<footer class="px-4 py-4 my-auto md:px-8 bg-white dark:bg-neutral-900">
+  <div
+    class="max-w-screen-xl flex flex-col justify-between items-center md:flex-row mx-auto"
+  >
+    <div class="flex flex-col md:flex-row">
+      <div
+        class="text-sm text-neutral-500 dark:text-neutral-400 sm:text-center"
+      >
+        <span>Made with</span>
+        <Icon name="heart-fill" class="mx-1 inline text-red-500" />
+        <span>by {siteMaker}.</span>
+      </div>
+
+      <div
+        class="mx-auto text-sm text-neutral-500 dark:text-neutral-400 sm:text-center"
+      >
+        <span
+          class="ml-1 text-sm text-neutral-500 dark:text-neutral-400 sm:text-center"
+        >
+          &copy;</span
+        >
+        <script type="text/javascript">
+          const date = document.write(new Date().getFullYear());
+        </script><a href="#" class="hover:underline"></a>
+        <span>All Rights Reserved.</span>
+      </div>
+    </div>
+    <div>
+      <ul class="flex justify-center space-x-6">
+        {
+          socialData.map((socialData) => {
+            return (
+              <SocialLink
+                name={socialData.name}
+                url={socialData.url}
+                icon={socialData.icon}
+              />
+            );
+          })
+        }
+      </ul>
+    </div>
+  </div>
+</footer>

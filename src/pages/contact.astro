@@ -1,0 +1,13 @@
+---
+// Layout
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+// Data
+import { siteName, contact } from "@data/siteData.json";
+---
+
+<BaseLayout
+  pageTitle={siteName + " | " + contact.pageTitle}
+  metaTitle={contact.metaTitle}
+  metaDescription={contact.metaDescription}
+/>

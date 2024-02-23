@@ -1,0 +1,64 @@
+{
+  "siteName": "Astro-Basic",
+  "siteMaker": "(DefaultCreator)",
+  "default": {
+    "pageTitle": "DefaultTitle",
+    "metaTitle": "DefaultMetaTitle",
+    "metaDescription": "DefaultMetaDescription",
+    "navName": "DefaultNav",
+    "navHref": "/"
+  },
+  "index": {
+    "pageTitle": "Home",
+    "metaTitle": "Home Page",
+    "metaDescription": "Astro-Basic Template",
+    "navName": "Home",
+    "navHref": "/"
+  },
+  "about": {
+    "pageTitle": "About",
+    "metaTitle": "About Page",
+    "metaDescription": "Astro-Basic Template",
+    "navName": "About",
+    "navHref": "/about"
+  },
+  "contact": {
+    "pageTitle": "Contact",
+    "metaTitle": "Contact Page",
+    "metaDescription": "Astro-Basic Template",
+    "navName": "Contact",
+    "navHref": "/contact"
+  },
+  "navData": [
+    { "name": "Home", "href": "/" },
+    { "name": "About", "href": "/about" },
+    { "name": "Contact", "href": "/contact" }
+  ],
+  "socialData": [
+    {
+      "name": "github",
+      "url": "https://github.com/#",
+      "icon": "github-fill"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.gg/#",
+      "icon": "discord-fill"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/#",
+      "icon": "twitter-x-fill"
+    },
+    {
+      "name": "instagram",
+      "url": "https://instagram.com/#",
+      "icon": "instagram-fill"
+    },
+    {
+      "name": "youtube",
+      "url": "https://youtube.com/#",
+      "icon": "youtube-fill"
+    }
+  ]
+}
